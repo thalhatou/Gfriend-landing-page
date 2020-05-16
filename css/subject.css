@@ -1,0 +1,52 @@
+:root {
+    --primary-color: #0382b9;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #999;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #fff;
+
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar {
+    height: 100vh;
+    background-color: blueviolet;
+}
+
+.preview {
+    background-color: #fff;
+}
