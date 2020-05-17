@@ -1,6 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
 :root {
-    --primary-color: #0382b9;
-    --secondary-color:#333;
+    --primary-color: #0085ba;
+    --secondary-color:#198e00;
+    --bg-color:#333;
+    --text-color:#fff;
 }
 
 * {
@@ -10,10 +14,14 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
-    background-color: #333;
+    background-color: #222;
     color: #999;
+}
+main{
+    background-color: var(--bg-color);
+
 }
 
 ul {
@@ -25,6 +33,7 @@ h2,
 h3,
 h4 {
     color: #fff;
+    font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -40,7 +49,7 @@ p {
     width: 100%;
     height: 93vh;
     position: relative;
-    background: url('img/favicon.png') no-repeat center center/cover;
+    background:url('../img/bg-header.jpg') no-repeat center center/cover;
 }
 
 .showcase::after {
@@ -60,6 +69,12 @@ p {
     height: 90px;
 }
 
+ .showcase-content span  {
+    color: var(--primary-color);
+}
+ .showcase-content h1  {
+    color: var(--text-color);
+}
 
 .showcase-top img {
     width: 170px;
@@ -141,7 +156,7 @@ p {
 .subjects-tab {
     margin-top: 1rem;
     color: #fff;
-    padding: 3rem 1rem;
+    padding: 3rem 2rem;
 }
 
 .subjects-tab .tab-content-item {
@@ -197,4 +212,59 @@ btn:hover {
 .btn-lg {
     font-size: 1rem;
 
+}
+/*footer*/
+.footer{
+    max-width: 75%;
+    margin: 1rem auto;
+    overflow: auto;
+}
+.footer p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+.footer span {
+    color: var(--primary-color);
+}
+.footer-cols a {
+    color: var(--text-color);
+}
+.footer-cols a:hover {
+    color: var(--primary-color);
+}
+.footer .footer-cols{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1em;
+    margin-top: 1rem;
+}
+   footer{
+   border-top: var(--primary-color) 0.2rem solid;
+}
+
+.social-icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-icons .fab{
+    color: var(--primary-color);
+}
+@media (max-width: 960px) {
+
+    .showacase{
+        height: 70vh;
+    }
+    .showcase-top img{
+        top: 30%;
+        left: 5%;
+        transform: translate(0);
+    }
+    .showcase-content h1 {
+        font-size: 2rem;
+        line-height: 0.8rem;
+    }
 }
