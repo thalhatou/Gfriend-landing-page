@@ -253,18 +253,45 @@ btn:hover {
 .social-icons .fab{
     color: var(--primary-color);
 }
+
+
+/*tablet-view*/
 @media (max-width: 960px) {
 
     .showacase{
         height: 70vh;
     }
     .showcase-top img{
-        top: 30%;
-        left: 5%;
-        transform: translate(0);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
     }
     .showcase-content h1 {
         font-size: 2rem;
         line-height: 0.8rem;
     }
+    .tabs .container {
+    grid-template-columns:  1fr;
+   
+}
+.subjects-tab .tab-content-item {
+    grid-template-columns: repeat(2, 1fr);
+  
+}
+.btn-rounded{
+    display: none;
+}
+
+    .footer .footer-cols{
+        
+
+    }
+     .showcase-content span  {
+    color: var(--primary-color);
+
+}
+ .showcase-content h1  {
+    color: var(--text-color);
+    font-size: .8rem;
+}
 }
